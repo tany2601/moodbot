@@ -1,0 +1,18 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond when the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Suggest coping mechanism and mindfulness exercise for happy mood
+  steps:
+  - intent: mood_happy
+  - action: action_suggest_coping_mechanism
+  - action: action_suggest_mindfulness_exercise

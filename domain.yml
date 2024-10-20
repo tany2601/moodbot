@@ -1,0 +1,73 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - mood_happy
+  - mood_sad
+  - bot_challenge
+  - ask_for_help
+
+actions:
+  - action_analyze_mood
+  - action_connect_to_professional
+  - action_suggest_coping_mechanism
+  - action_suggest_mindfulness_exercise
+
+responses:
+  utter_greet:
+    - text: "Hello! How are you feeling today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Take care and talk to you later! 😊"
+
+  utter_mood_happy:
+    - text: "I'm glad to hear that! Keep up the positive vibe! 😊"
+
+  utter_mood_sad:
+    - text: "I'm really sorry you're feeling this way. Let's take a deep breath together. Would you like to try some mindfulness exercises?"
+
+  utter_ask_for_help:
+    - text: "I'm here to help. What can I do for you today?"
+
+  utter_coping_mechanism:
+    - text: "Here are some coping mechanisms you can try: \n- Talk to a friend or family member. \n- Write down your thoughts in a journal. \n- Go for a walk in nature."
+
+  utter_mindfulness_exercise:
+    - text: "How about trying a simple breathing exercise? Close your eyes and breathe in deeply for 4 seconds, hold for 4, then breathe out for 4. Repeat for a few minutes."
+
+  utter_coping_mechanism_great:
+    - text: "That's great! Here are some ways to keep your spirits high: \n- Spend time with loved ones. \n- Engage in a hobby you love. \n- Practice gratitude by listing things you're thankful for."
+
+  utter_mindfulness_exercise_great:
+    - text: "To maintain your good mood, try this: \n- Spend some time meditating or practicing mindfulness. \n- Go for a run or do some exercise to release endorphins."
+
+  utter_coping_mechanism_unhappy:
+    - text: "I'm sorry you're feeling this way. You might try: \n- Talking about your feelings with someone you trust. \n- Listening to uplifting music."
+
+  utter_mindfulness_exercise_unhappy:
+    - text: "How about trying a grounding exercise? Focus on your senses: identify 5 things you can see, 4 you can feel, 3 you can hear, 2 you can smell, and 1 you can taste."
+
+  utter_coping_mechanism_happy:
+    - text: "That's wonderful! Here are a few things you can do to celebrate: \n- Treat yourself to something nice. \n- Share your happiness with others."
+
+  utter_mindfulness_exercise_happy:
+    - text: "Keep that positive energy going with this exercise: \n- Dance to your favorite song or do something creative."
+
+  utter_iamabot:
+    - text: "Yes, I am a bot here to help you with your mental health! 😊"
+
+  # Add the missing utter_did_that_help
+  utter_did_that_help:
+    - text: "Did that help you feel better?"
+
+  utter_cheer_up:
+    - text: "Hey, I'm here for you! Let's try to find something that makes you smile. 😊"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

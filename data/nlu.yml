@@ -1,0 +1,81 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - hey there
+      - hey dude
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - good night
+      - have a nice day
+      - bye bye
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - I don't think so
+      - never
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling wonderful
+      - I am feeling very good
+      - I am going to save the world
+
+  - intent: mood_unhappy
+    examples: |
+      - I am sad
+      - my day was horrible
+      - super sad
+      - I'm disappointed
+      - unhappy
+      - not feeling good
+      - feeling very low
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+
+  - intent: ask_for_help
+    examples: |
+      - I need help
+      - Can you support me?
+      - Can you suggest something?
+
+  - intent: mood_happy
+    examples: |
+      - I am feeling great
+      - I'm happy today
+      - I am in a good mood
+
+  - intent: mood_sad
+    examples: |
+      - I am feeling sad
+      - I am not okay
+      - I'm feeling down today
